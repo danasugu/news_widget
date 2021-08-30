@@ -4,7 +4,10 @@ function fetchData() {
       return response.json();
     })
     .then((data) => {
-      console.log(data);
+      console.log(data.news);
+    })
+    .catch((error) => {
+      console.log(error);
     });
 }
 

@@ -3,7 +3,9 @@ function fetchData() {
     .then((response) => {
       return response.json();
     })
-    .then((data) => {});
+    .then((data) => {
+      console.log(data);
+    });
 }
 
 fetchData();

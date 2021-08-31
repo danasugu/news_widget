@@ -14,6 +14,11 @@ $.ajax({
       $('ul').append('<li class="details">' + value.details + '</li>');
     });
   },
+  error: function (jqXHR, textStatus, errorThrown) {
+    console.log(jqXHR);
+    console.log(textStatus);
+    console.log(errorThrown);
+  },
 });
 
 var numberOfItems = $('#page .list-group').length; // Get total number of the items that should be paginated

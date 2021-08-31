@@ -5,8 +5,8 @@ $.ajax({
   type: 'GET',
   cache: false,
   data: {
-    minRow: 1,
-    maxRow: 5,
+    page: 1,
+    pagelimit: 5,
   },
   success: function (data) {
     $(data.news).each(function (index, value) {
@@ -15,6 +15,9 @@ $.ajax({
     });
   },
 });
+
+var numberOfItems = $('#page .list-group').length; // Get total number of the items that should be paginated
+// alert(numberOfItems);
 
 // function fetchData() {
 //   fetch('http://www.mocky.io/v2/58fda6ce0f0000c40908b8c8')

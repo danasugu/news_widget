@@ -1,3 +1,9 @@
+:root {
+  --light-grey: #ccc;
+  --dots: #050101;
+  --white: #fff;
+  --dark-grey: #48443f;
+}
 * {
   margin: 0;
   padding: 0;
@@ -6,14 +12,14 @@
 
 body {
   margin-left: 10px;
-  background-color: #fff;
+  background-color: var(--white);
   font-family: 'Open Sans', sans-serif;
 }
 
 .dot {
   height: 13px;
   width: 13px;
-  background-color: rgb(5, 1, 1);
+  background-color: var(--dots);
   border-radius: 50%;
   display: inline-block;
 }
@@ -21,19 +27,19 @@ body {
   position: absolute;
   max-width: 450px;
   width: 100%;
-  border: 2px solid #ccc;
+  border: 2px solid var(--light-grey);
 }
 .news-container .header {
   height: 50px;
   margin-bottom: 50px;
-  background-color: #cccccc;
+  background-color: var(--light-grey);
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .news-container .latest-news > p {
   padding-left: 10px;
-  color: #48443f;
+  color: var(--dark-grey);
 }
 .news-container .dots {
   padding-right: 10px;

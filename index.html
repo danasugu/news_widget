@@ -5,7 +5,6 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>News Widget API</title>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,6 +14,7 @@
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
   <link rel="stylesheet" href="css/styles.css">
+  <title>News Widget API</title>
 </head>
 
 <body>
@@ -24,23 +24,34 @@
         <p>Latest news</p>
       </div>
       <div id="#dots" class="dots">
-        <a href="javascript:void(0)"><i id="#firstPaget" class="fa fa-circle active" aria-hidden="true"></i></a>
-        <a href="javascript:void(0)"><i id="#secondPage" class="fa fa-circle" aria-hidden="true"></i></a>
-        <a href="javascript:void(0)"><i id="#thirdPage" class="fa fa-circle" aria-hidden="true"></i></a>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
       </div>
     </div>
-    <!-- <div class="title"></div> -->
+    <!-- <button class="goTwoButton">load page 2</button> -->
     <div class="news-content">
-      <ul></ul>
+      <h3 class="news-title"></h3>
+      <p class="news-details"></p>
     </div>
+
+    <!-- <div id="load">
+      <ul></ul>
+    </div> -->
+    <!-- <button id="secondPage" onclick="secPage()">2</button>
+    <button id="thirdPage" onclick=thirdPage()">3</button> -->
+
+    <div class="dots">
+      <!-- <ul> -->
+      <!-- <li><a href="#">1 </a></li> -->
+      <!-- <li id="secondPage" onclick="page2()"><a href="">2</a></li>
+        <li id="secondPage" onclick="page2()">3</li> -->
+      <!-- </ul> -->
+    </div>
+
   </div>
 
   <script src="js/script.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
-    integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <!-- <script src="js/paging.js"></script> -->
-
 </body>
 
 </html>

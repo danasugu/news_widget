@@ -7,9 +7,16 @@
 body {
   margin-left: 10px;
   background-color: #fff;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
+.dot {
+  height: 13px;
+  width: 13px;
+  background-color: rgb(5, 1, 1);
+  border-radius: 50%;
+  display: inline-block;
+}
 .news-container {
   position: absolute;
   max-width: 450px;
@@ -37,12 +44,13 @@ ul li {
   padding-left: 10px;
 }
 
-.title {
+.news-title {
+  font-size: 18px;
   padding-bottom: 10px;
   font-weight: 700;
 }
 
-.details {
+.news-details {
   margin-bottom: 20px;
   font-size: 15px;
 }

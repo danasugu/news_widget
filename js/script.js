@@ -1,8 +1,6 @@
 'use strict';
 const API_URL = 'http://www.mocky.io/v2/58fda6ce0f0000c40908b8c8';
 const loadPageOneElement = document.querySelector('.news-content');
-// const PageTwoButton = document.querySelector('.goTwoButton');
-// const pages = document.querySelector('.dots');
 
 async function getNews() {
   loadPageOneElement.innerHTML = '';
